@@ -1,0 +1,19 @@
+<style>
+    img.centered {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img.standard {
+        width: 500px;
+    }
+    img.small {
+        width: 350px;
+    }
+    img.very_small {
+        width: 250px;
+    }
+</style>
+<img src="{{ .Destination | safeURL }}"/>

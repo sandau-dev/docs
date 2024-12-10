@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://localhost:1313/docs/annotation_guidelines/index.html</link>
+    <description>Getting Started When reviewing annotations, consider the following:&#xA;The trained model has no context of what is in an image in the beginning. It is our responsibility to provide that context. Creating an annotation that contains enough context for a specific detection class is important. Context will vary from class to class. Consider if an annotations contains enough context to inform the model on what a “good” detection is. Too little context (a small annotation with little visual information) will lead to poor detection performance. Too much context (a very large annotation) and the model may not be able to distinguish finer details when making a detection.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/docs/annotation_guidelines/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

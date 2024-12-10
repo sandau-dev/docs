@@ -1,0 +1,8 @@
+baseURL = 'https://docs.sandau.dev'
+languageCode = 'en-us'
+title = 'Sandau Docs'
+theme = 'hugo-theme-relearn'
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
