@@ -2,11 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sandau Docs</title>
-    <link>https://docs.sandau.dev/index.html</link>
+    <link>http://localhost:1313/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://docs.sandau.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Dec 2024 15:22:45 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GoPro Settings Guidelines</title>
+      <link>http://localhost:1313/gopro-settings-guidelines/index.html</link>
+      <pubDate>Tue, 10 Dec 2024 15:22:45 -0800</pubDate>
+      <guid>http://localhost:1313/gopro-settings-guidelines/index.html</guid>
+      <description>Supported GoPro Models GoPro HERO 13 GoPro HERO 11 (Recommended) GoPro HERO 10 Required GoPro Settings Video Quality and Settings Proceed through the following steps to ensure the settings for the GoPro are properly set.&#xA;The following examples are from a GoPro HERO 11 Black.&#xA;Power on the GoPro. On the main menu on the back screen, ensure that the device is in video mode (#1). Tap the video settings as shown near #2 to open the video settings. In the video settings, tap the pencil icon (#1) on the “Standard” row. Configure the video resolution &amp; FPS (Frames Per Second) by tapping on the “RES|FPS” option (#1). Select the following options by tapping on the screen at their respective locations. Once complete, tap the center, blue bubble to return to the previous menu. 16:9 Aspect Ratio (#1) 1080 Resolution (#2) 30 FPS (#3) Configure the Lens by tapping on the “Lens” option (#2). Using the slider, slide until the “Linear” option is selected. Once selected, tap on the middle of the screen to return to the previous menu. If your GoPro has HyperSmooth functionality, configure the feature by tapping on the HyperSmooth option (#3). Using the slider, slide until the “AutoBoost” option is selected. Once selected, tap on the middle of the screen to return to the previous menu. Tap the “&lt;” icon on the top-left of the screen twice to return to the main screen.</description>
+    </item>
+    <item>
+      <title>Annotation Review Guidelines</title>
+      <link>http://localhost:1313/annotation-review-guidelines/index.html</link>
+      <pubDate>Mon, 09 Dec 2024 22:40:09 -0800</pubDate>
+      <guid>http://localhost:1313/annotation-review-guidelines/index.html</guid>
+      <description>Getting Started When reviewing annotations, consider the following:&#xA;The model starts without any context about classes. Ensure annotations give enough context for each detection class. Too little context (small annotations) leads to poor performance. Too much context (large annotations) makes it hard for the model to distinguish details.</description>
+    </item>
   </channel>
 </rss>
