@@ -2,18 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sandau Docs</title>
-    <link>http://localhost:1313/index.html</link>
+    <link>https://docs.sandau.dev/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Dec 2024 22:40:09 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Annotation Review Guidelines</title>
-      <link>http://localhost:1313/annotation-review-guidelines/index.html</link>
-      <pubDate>Mon, 09 Dec 2024 22:40:09 -0800</pubDate>
-      <guid>http://localhost:1313/annotation-review-guidelines/index.html</guid>
-      <description>Getting Started When reviewing annotations, consider the following:&#xA;The model starts without any context about classes. Ensure annotations give enough context for each detection class. Too little context (small annotations) leads to poor performance. Too much context (large annotations) makes it hard for the model to distinguish details.</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://docs.sandau.dev/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

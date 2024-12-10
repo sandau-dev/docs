@@ -27,13 +27,13 @@ The model starts without any context about classes. Ensure annotations give enou
 The model starts without any context about classes. Ensure annotations give enough context for each detection class. Too little context (small annotations) leads to poor performance. Too much context (large annotations) makes it hard for the model to distinguish details.">
     <meta itemprop="datePublished" content="2024-12-09T22:40:09-08:00">
     <meta itemprop="dateModified" content="2024-12-09T22:40:09-08:00">
-    <meta itemprop="wordCount" content="455">
+    <meta itemprop="wordCount" content="445">
     <title>Annotation Review Guidelines :: Sandau Docs</title>
-    <link href="/css/fontawesome-all.min.css?1733857437" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733857437" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1733857437" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733857437" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1733857437" rel="stylesheet">
-    <link href="/css/theme.css?1733857437" rel="stylesheet">
-    <link href="/css/format-html.css?1733857437" rel="stylesheet" id="R-format-style">
+    <link href="/css/fontawesome-all.min.css?1733871149" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733871149" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1733871149" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733871149" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1733871149" rel="stylesheet">
+    <link href="/css/theme.css?1733871149" rel="stylesheet">
+    <link href="/css/format-html.css?1733871149" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -150,6 +150,9 @@ The model starts without any context about classes. Ensure annotations give enou
         margin-left: auto;
         margin-right: auto;
     }
+    img.large {
+        width: 750px;
+    }
     img.standard {
         width: 500px;
     }
@@ -175,25 +178,22 @@ The model starts without any context about classes. Ensure annotations give enou
 <ol>
 <li>
 <p>Navigate to <a href="https://cvat.sandau.dev" rel="external" target="_blank">https://cvat.sandau.dev</a> and login with your provided credentials.</p>
- <!-- ![blah](/images/login_page.png "Login Page") -->
  <img src="/images/annotation_review/login_page.png" class="centered standard"/>
 </li>
 <li>
-<p>Once logged in, the <code>Tasks</code> page will be shown.
-<img src="/images/annotation_review/tasks_page.png" class="centered standard"/></p>
+<p>Once logged in, the <code>Tasks</code> page will be shown.</p>
+ <img src="/images/annotation_review/tasks_page.png" class="centered standard"/>
 <ul>
-<li>
-<p>If you <strong><em>do not</em></strong> see any tasks but would expect to, ensure that you are using the correct &ldquo;Organization&rdquo;. To change or view your current organization, select the drop down menu with your username on the top-right of the page. Select &ldquo;Organization&rdquo; from the drop down menu and select your organization.
-<img src="/images/annotation_review/organization_selection.png" class="centered small"/></p>
-</li>
-<li>
-<p>If you were provided a direct link to a task or a link to a specific frame (for example: <code>https://cvat.sandau.dev/tasks/3/jobs/3?frame=96</code>), now that you are logged in, change the URL in your web browser and navigate directly to that link and skip step 3.</p>
-</li>
+<li>If you <strong><em>do not</em></strong> see any tasks but would expect to, ensure that you are using the correct &ldquo;Organization&rdquo;. To change or view your current organization, select the drop down menu with your username on the top-right of the page. Select &ldquo;Organization&rdquo; from the drop down menu and select your organization.</li>
+</ul>
+ <img src="/images/annotation_review/cvat_organization_selection.gif" class="centered"/>
+<ul>
+<li>If you were provided a direct link to a task or a link to a specific frame (for example: <code>https://cvat.sandau.dev/tasks/3/jobs/3?frame=96</code>), now that you are logged in, change the URL in your web browser and navigate directly to that link and skip step 3.</li>
 </ul>
 </li>
 <li>
-<p>Select the task you wish to review by clicking the task&rsquo;s corresponding &ldquo;Open&rdquo; button. Once selected, the annotation interface will be displayed.
-<img src="/images/annotation_review/cvat_canvas.png" class="centered standard"/></p>
+<p>Select the task you wish to review by clicking the task&rsquo;s corresponding &ldquo;Open&rdquo; button. Select the &ldquo;Job&rdquo;. Once selected, the annotation interface will be displayed.</p>
+ <img src="/images/annotation_review/cvat_task_to_canvas.gif" class="centered large"/>
 </li>
 </ol>
 
@@ -207,14 +207,8 @@ The model starts without any context about classes. Ensure annotations give enou
   </div>
 </details>
 <ol start="4">
-<li>
-<p>Ensure the annotation interface is set to &ldquo;Review&rdquo;. Select the drop down menu on the top right of the annotation interface and select &ldquo;Review&rdquo;.
-<img src="/images/annotation_review/canvas_mode_selection.png" class="centered small"/></p>
-</li>
-<li>
-<p>&ldquo;Review&rdquo; mode will now be enabled and the following interface will be shown.
-<img src="/images/annotation_review/canvas_review_interface.png" class="centered standard"/></p>
-</li>
+<li>Ensure the annotation interface is set to &ldquo;Review&rdquo;. Select the drop down menu on the top right of the annotation interface and select &ldquo;Review&rdquo;.
+<img src="/images/annotation_review/cvat_enable_review_mode.gif" class="centered large"/></li>
 </ol>
 <h2 id="reviewing-annotations">Reviewing Annotations</h2>
 
@@ -230,8 +224,8 @@ The model starts without any context about classes. Ensure annotations give enou
 <h3 id="navigating-through-a-video">Navigating through a video</h3>
 <ul>
 <li>
-<p>To step through images, use either the highlighted buttons on the top of the interface as shown in the image below or use the <code>F</code> and <code>D</code> keys to step forward or backward respectively.
-<img src="/images/annotation_review/canvas_forward_back_buttons.png" class="centered very_small"/></p>
+<p>To step through images, use either the highlighted buttons on the top of the interface as shown in the image below or use the <code>F</code> and <code>D</code> keys to step forward or backward respectively.</p>
+  <img src="/images/annotation_review/canvas_forward_back_buttons.png" class="centered very_small"/>
 </li>
 <li>
 <p>To navigate to the next or previous image <strong>which contain annotations</strong>, use the <code>Left Arrow</code> and <code>Right Arrow</code> keys.</p>
@@ -240,13 +234,8 @@ The model starts without any context about classes. Ensure annotations give enou
 <h3 id="adding-a-comment-to-an-image">Adding a comment to an image</h3>
 <ul>
 <li>
-<p>Add a comment by either selecting the &ldquo;Open an issue&rdquo; button on the left-hand toolbar or by pressing the <code>N</code> key.
-<img src="/images/annotation_review/open_an_issue.png" class="centered very_small"></p>
-</li>
-<li>
-<p>Once selected, the curser will turn into a pointer-hand. To add a comment to the image, click and drag on the image to create a box indicating the area of interest that the comment refers to. Select &ldquo;Submit&rdquo; or press the <code>Enter</code> key to submit the comment.
-<img src="/images/annotation_review/cvat_adding_comment.gif" class="centered"/></p>
-</li>
+<p>Add a comment by either selecting the &ldquo;Open an issue&rdquo; button on the left-hand toolbar or by pressing the <code>N</code> key. Once selected, the curser will turn into a pointer-hand. To add a comment to the image, click and drag on the image to create a box indicating the area of interest that the comment refers to. Select &ldquo;Submit&rdquo; or press the <code>Enter</code> key to submit the comment.</p>
+  <img src="/images/annotation_review/cvat_add_review_comment.gif" class="centered"/></li>
 </ul>
 
   <footer class="footline">
@@ -264,7 +253,7 @@ Sandau Docs
           </a>
         </div>
         <script>
-          window.index_js_url="/searchindex.en.js?1733857437";
+          window.index_js_url="/searchindex.en.js?1733871149";
         </script>
         <search><form action="/search/index.html" method="get">
           <div class="searchbox default-animation">
@@ -277,12 +266,12 @@ Sandau Docs
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1733857437" defer></script>
-        <script src="/js/lunr/lunr.min.js?1733857437" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1733857437" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1733857437" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1733857437" defer></script>
-        <script src="/js/search.js?1733857437" defer></script>
+        <script src="/js/auto-complete.js?1733871149" defer></script>
+        <script src="/js/lunr/lunr.min.js?1733871149" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1733871149" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1733871149" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1733871149" defer></script>
+        <script src="/js/search.js?1733871149" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -347,8 +336,8 @@ Sandau Docs
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1733857437" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1733857437" defer></script>
-    <script src="/js/theme.js?1733857437" defer></script>
+    <script src="/js/clipboard.min.js?1733871149" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1733871149" defer></script>
+    <script src="/js/theme.js?1733871149" defer></script>
   </body>
 </html>

@@ -6,3 +6,6 @@ theme = 'hugo-theme-relearn'
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+
+[params]
+    themeVariant = ['auto']
